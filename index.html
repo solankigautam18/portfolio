@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="imgs/logow.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a</li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header1">
+                <p>Freelancer</p>
+                <h1>Hi, I'm <span>Gautam</span> <br> A Web Developer</h1>
+            </div>
+        </div>
+    </div>
+    <!-- ABOUT -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="imgs/about1.png" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am a passionate web developer with a strong foundation in HTML, CSS, and JavaScript.Driven by a lifelong curiosity for technology and design, I specialize in front-end development and responsive web design.
+                    I aim to contribute to meaningful projects that have a positive impact, pushing the boundaries of what's possible in the digital realm.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Technologies</span><br>HTML, CSS, Bootstrap, novice: Javascript</li>
+                            <li><span>Tools</span><br>Git, Windows</li>
+                            <li><span>Frameworks & Library</span><br>JQuery</li>
+                            <li><span>C++</span><br>Learning Data Structures And Algorithms Using Cpp @CodingBlocks</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Web-Development</span><br>Have good experience in building websites and making responsive layouts. 
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2021-Present</span><br>B.Tech (Electrical Engineering) from Delhi Technological University</li>
+                            <li><span>2020-2021</span><br>XII (CBSE) from Indraprastha Convent Senior Secondary School, New Delhi</li>
+                            <li><span>2018-2019</span><br>X (CBSE)from Indraprastha Convent Senior Secondary School, New Delhi</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Services -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fas fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>I specialize in creating modern, responsive websites that are tailored to your unique brand identity and user needs. From concept to implementation, I ensure a seamless and engaging user experience.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fas fa-crop-alt"></i>
+                    <h2>Front-end work</h2>
+                    <p> With expertise in HTML, CSS, and JavaScript, I build interactive and visually stunning interfaces. I focus on writing clean code and optimizing performance for a smooth user experience across different devices and browsers.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <!-- <div>
+                    <h2>UI/UX Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum mollitia perferendis vero, ipsa autem repellat?</p>
+                    <a href="#">Learn more</a>
+                </div> -->
+            </div>
+        </div>
+    </div>
+    <!-- -------------Portfolio------------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="imgs/works2.png" alt="">
+                    <br>
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>The app connects you to the talented people around the world. Download it from Playstore.</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="imgs/workss1.png" alt="">
+                    <div class="layer">
+                        <h3>Spotify Layout</h3>
+                        <p>Spotify is a digital music streaming service that gives you access to millions of songs, podcasts and videos from artists all over the world.</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <!-- <div class="work">
+                    <img src="imgs/works 2.png" alt="">
+                </div> -->
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+    <!-- ----------contact form---------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fas fa-paper-plane"></i> gautamsolanki0218@gmail.com</p>
+                    <p><i class="fas fa-phone-square-alt"></i> +91 9355625450</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fa fa-git"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                    <a href="#" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="xyz@gmail.com" required>
+                        <textarea name="Message"  rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright <i class="fas fa-copyright"></i> Gautam. Made with <i class="fas fa-heart"></i> </p>
+        </div>
+    </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyCAlneqMqENUbIKz3jlvboyw5sD4XR5ll9E5mgpH-6RgC_KDIYQtlgPdaQ3ADe74YFGQ/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully !"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000) //means 5000ms = 5s
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
