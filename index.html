@@ -24,8 +24,11 @@
                 <i class="fas fa-bars" onclick="openmenu()"></i>
             </nav>
             <div class="header1">
-                <p>Freelancer</p>
-                <h1>Hi, I'm <span> Gautam</span><br> A Web Developer</h1>
+                <!-- <p>Freelancer</p>
+                <h1>Hi, I'm <span> Gautam</span><br> A Web Developer</h1> -->
+                <h1>Hi,</h1>
+                <h1>I'm <span>Gautam</span></h1>
+                <h1 id="trans">Web Developer</h1>
             </div>
         </div>
     </div>
@@ -53,10 +56,10 @@
                     </div>
                     <div class="tab-contents active-tab" id="skills">
                         <ul>
-                            <li><span>Technologies</span><br>HTML, CSS, Bootstrap, novice: Javascript</li>
+                            <li><span>Technologies</span><br>HTML, CSS, Bootstrap,NodeJs, ExpressJs</li>
                             <li><span>Tools</span><br>Git, Windows</li>
                             <li><span>Frameworks & Library</span><br>JQuery</li>
-                            <li><span>C++</span><br>Learning Data Structures And Algorithms Using Cpp @CodingBlocks</li>
+                            <li><span>Languages</span><br>C++,Javascript</li>
                         </ul>
                     </div>
                     <div class="tab-contents" id="experience">
@@ -86,19 +89,20 @@
                     <i class="fas fa-code"></i>
                     <h2>Web Design</h2>
                     <p>I specialize in creating modern, responsive websites that are tailored to your unique brand identity and user needs. From concept to implementation, I ensure a seamless and engaging user experience.</p>
-                    <a href="#">Learn more</a>
+                    <!-- <a href="#">Learn more</a> -->
                 </div>
                 <div>
                     <i class="fas fa-crop-alt"></i>
                     <h2>Front-end work</h2>
                     <p> With expertise in HTML, CSS, and JavaScript, I build interactive and visually stunning interfaces. I focus on writing clean code and optimizing performance for a smooth user experience across different devices and browsers.</p>
-                    <a href="#">Learn more</a>
+                    <!-- <a href="#">Learn more</a> -->
                 </div>
-                <!-- <div>
-                    <h2>UI/UX Design</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum mollitia perferendis vero, ipsa autem repellat?</p>
-                    <a href="#">Learn more</a>
-                </div> -->
+                <div>
+                    <i class="fa-sharp fa-solid fa-laptop-code"></i>
+                    <h2>Software Developer</h2>
+                    <p>Committed to delivering efficient code with a keen eye for detail. Continuously learning and staying updated with the latest advancements in C++ and related technologies. Open to exciting opportunities to leverage my skills and contribute to cutting-edge projects. Let's connect and discuss how we can collaborate!"</p>
+                    <!-- <a href="#">Learn more</a> -->
+                </div>
             </div>
         </div>
     </div>
@@ -203,6 +207,21 @@
         })
         .catch(error => console.error('Error!', error.message))
     })
+
+    const text = document.querySelector("#trans");
+    const textLoad = () => {
+        setTimeout(() => {
+            text.textContent = "A Web Developer";
+        },0);
+        setTimeout(() => {
+            text.textContent = "A Software Developer";
+        },3000);
+        setTimeout(() => {
+            text.textContent = "A Freelancer";
+        },6000);
+    }
+    textLoad();
+    setInterval(textLoad,9000);
   </script>
 </body>
 </html>
