@@ -277,22 +277,7 @@ margin: 10px 0;
     transition: transform 0.5s;
 }
 
-.work video:hover{
-    border: 1px solid #fff;
-    /* animation: pop ease 1s; */
-}
 
-/* @keyframes pop{
-    0% {
-        width: 100%;
-        height: 100%;
-    }
-
-    100%{
-        width: 100px;
-        height: 100px;
-    }
-} */
 
 .layer{
     width: 100%;
@@ -309,6 +294,7 @@ margin: 10px 0;
     padding: 0 40px;
     text-align: center;
     font-size: 14px;
+    opacity: 0;
     transition: height 0.5s;
 }
 
@@ -336,6 +322,7 @@ margin: 10px 0;
 
 .work:hover .layer{
     height: 100%;
+    opacity: 1;
 }
 
 .btn{
